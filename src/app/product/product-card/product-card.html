@@ -1,0 +1,9 @@
+<div style="width: 400px">
+  <div style="border: 1px solid saddlebrown; margin-top: 1rem; padding: 1rem; display: flex; flex-basis: content">
+    <span style="font-weight: bold;">{{ product().name }}</span>: <span>{{ product().price }}</span>
+    <span style="padding: 0 1rem">
+      <button style="cursor: pointer" (click)="addProduct.emit(product())">Add to cart</button>
+    </span>
+  </div>
+</div>
+

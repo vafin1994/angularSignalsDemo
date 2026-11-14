@@ -1,0 +1,13 @@
+<div>
+  <h3>Cart items</h3>
+  @for (item of cart.items(); track item.id) {
+    <div>
+      {{ item | json }}
+    </div>
+  }
+  <hr>
+  <div style="border: 1px solid salmon">
+    <div>Number of positions: {{ cart.numberOfPositions() }}</div>
+    <div>Total price: {{ cart.fullTotalPrice() }}</div>
+  </div>
+</div>
